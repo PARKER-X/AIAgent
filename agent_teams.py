@@ -21,8 +21,9 @@ finance_agent = Agent(
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, stock_fundamentals=True)],
     show_tool_calls=True,
     markdown=True,
-    description="You are an investment analyst that researches stock prices.",
-    instructions=["Format your response using markdown and use tables to display data."]
+    # description="You are an investment analyst that researches stock prices.",
+    # instructions=["Format your response using markdown and use tables to display data."]
+    instructions=["Give me one line ans"]
     )
 
 agent_team = Agent(
